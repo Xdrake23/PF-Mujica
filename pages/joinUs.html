@@ -1,63 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <meta name="description" content="Neru is a bot in which you can work with us">
+    <meta name="keywords" content="Neru, Ner, Bot, Discord, Antiscam, Join, Job, Us">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../images/favicon.ico">
     <title>Neru - Join to Us</title>
 </head>
+
 <body>
-    <header class="container-fluid bg-info py-3">
+    <header class="container-fluid bg-info pb-3">
         <div class="row d-flex align-items-center">
+            <button class="dark-mode-toggle fa-solid fa-circle-half-stroke"></button>
+            <script>
+                document.querySelector('.dark-mode-toggle').addEventListener('click', function () {
+                    const body = document.body;
+                    if (body.classList.contains('dark-mode')) {
+                        body.classList.remove('dark-mode');
+                    } else {
+                        body.classList.add('dark-mode');
+                    }
+                });
+            </script>
             <div class="d-flex justify-content-center col-lg-3">
                 <p class="fs-1 fw-semibold"><i class="fa-solid fa-diamond" style="color: #000000;"></i> BOT</p>
             </div>
-            <nav class="col-xl-6 col-12 text-center">
-                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4" href="../index.html">Home</a>
-                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4" href="./commands.html">Commands</a>
-                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4" href="./contact.html">Contact</a>
-                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4" href="./joinUs.html">JoinUs</a>
-                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4" href="./invite.html">Invite</a>
+            <nav class="col-xl-6 col-12 text-center menu">
+                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item" href="../index.html">Home</a>
+                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item" href="./commands.html">Commands</a>
+                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item" href="./contact.html">Contact</a>
+                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item" href="./joinUs.html">Join</a>
+                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item" href="./invite.html">Invite</a>
             </nav>
             <div class="d-none col-lg-3 justify-content-center align-items-center d-xl-flex">
-                <p class="fw-semibold fs-1 m-0">NERU</p> <img class="w-25 ml-2" src="../images/Neru.jpg" alt="Imagen de presentacion de Neru">
+                <p class="fw-semibold fs-1 m-0">NERU</p> <img class="w-25 ml-2" src="../images/Neru.jpg"
+                    alt="Imagen de presentacion de Neru">
             </div>
         </div>
     </header>
     <main class="container mt-5 min-vh-100">
         <h1 class="border-bottom border-info">Requirements</h2>
-        <div class="d-lg-flex d-block">
-            <form class="fs-5 mt-5">
-                <input class="mt-0" type="text" name="name" placeholder="Name" required>
-                <input class="mt-3" type="text" name="last-name" placeholder="Last Name" required>
-                <input class="mt-3" type="text" name="age" placeholder="Age" required>
-                <input class="mt-3" type="email" name="email" placeholder="Email" required>
-                <textarea class="mt-3 d-block w-75" name="message" placeholder="¿Why do you want join?" required></textarea>
-                <input class="btn btn-dark py-2 my-3" type="submit" value="Enviar">
-            </form>
-            <div class="fs-5 mt-5">
-                <dl>
-                    <dt>Basic programming</dt>
-                    <dd>It is important to have a solid understanding of fundamental programming concepts such as variables, control structures (conditionals and loops), functions, and data structures.</dd>
+            <div class="d-lg-flex d-block">
+                <form class="fs-5 mt-5">
+                    <input class="mt-0" type="text" name="name" placeholder="Name" required>
+                    <input class="mt-3" type="text" name="last-name" placeholder="Last Name" required>
+                    <input class="mt-3" type="text" name="age" placeholder="Age" required>
+                    <input class="mt-3" type="email" name="email" placeholder="Email" required>
+                    <textarea class="mt-3 d-block w-75" name="message" placeholder="¿Why do you want join?"
+                        required></textarea>
+                    <input class="btn btn-dark py-2 my-3" type="submit" value="Enviar">
+                </form>
+                <div class="fs-5 mt-5">
+                    <dl>
+                        <dt>Basic programming</dt>
+                        <dd>It is important to have a solid understanding of fundamental programming concepts such as
+                            variables, control structures (conditionals and loops), functions, and data structures.</dd>
 
-                    <dt>Version control</dt>
-                    <dd>It's important to understand how to use a version control system like Git to effectively collaborate on software projects and track code changes.</dd>
+                        <dt>Version control</dt>
+                        <dd>It's important to understand how to use a version control system like Git to effectively
+                            collaborate on software projects and track code changes.</dd>
 
-                    <dt>Debugging and testing</dt>
-                    <dd>Being able to debug code and perform tests to make sure the software works correctly is essential. Familiarize yourself with debugging and testing tools and techniques in Python.</dd>
+                        <dt>Debugging and testing</dt>
+                        <dd>Being able to debug code and perform tests to make sure the software works correctly is
+                            essential. Familiarize yourself with debugging and testing tools and techniques in Python.
+                        </dd>
 
-                    <dt>Good programming practices</dt>
-                    <dd>Being aware of good programming practices, such as writing code that is readable, modular, and well-documented. Knowing code style conventions, such as PEP 8, is also helpful.</dd>
+                        <dt>Good programming practices</dt>
+                        <dd>Being aware of good programming practices, such as writing code that is readable, modular,
+                            and well-documented. Knowing code style conventions, such as PEP 8, is also helpful.</dd>
 
-                    <dt>Collaboration and communication</dt>
-                    <dd>Being able to collaborate with other developers in a team environment and communicate clearly and effectively is essential. This involves verbal and written communication skills, as well as the ability to work in a team and manage tasks efficiently.</dd>
-                </dl>
+                        <dt>Collaboration and communication</dt>
+                        <dd>Being able to collaborate with other developers in a team environment and communicate
+                            clearly and effectively is essential. This involves verbal and written communication skills,
+                            as well as the ability to work in a team and manage tasks efficiently.</dd>
+                    </dl>
+                </div>
             </div>
-    </div>
     </main>
-    <footer class="bg-info-subtle py-3 d-flex text-center">
+    <footer class="bg-info-subtle py-3 d-flex text-center text-dark">
         <div class="fs-5 col-7">
             <p class="fw-bold">Support</p>
             <p>Bot@gmail.com</p>
@@ -67,7 +93,14 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/70a8eee672.js" crossorigin="Edreikit"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
