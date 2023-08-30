@@ -1,0 +1,17 @@
+.dark-mode-toggle {
+    @include dark-mode();
+  }
+
+  .menu .menu-item {
+    display: inline-block; 
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+.menu .menu-item:hover {
+    color: #000000; 
+    background-color: #bbbbbb; 
+    transform: translateY(-5px);
+}
