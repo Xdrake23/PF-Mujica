@@ -6,6 +6,9 @@ body.dark-mode {
 body.dark-mode .table {
   border-color: #666;
 }
+body.dark-mode .table .table-bordered {
+  border-color: #FFF;
+}
 body.dark-mode .table thead th {
   background-color: #444;
   color: #FFF;
@@ -56,6 +59,26 @@ footer.dark-mode .dark-mode-toggle {
   color: #000000;
   background-color: #bbbbbb;
   transform: translateY(-5px);
+}
+
+.fa-discord {
+  color: #6970ce;
+}
+
+.fa-instagram {
+  color: #f06aec;
+}
+
+.fa-facebook {
+  color: #0fc2e6;
+}
+
+.fa-twitter {
+  color: #095ef1;
+}
+
+.fa-whatsapp {
+  color: #00ff04;
 }
 
 /*!

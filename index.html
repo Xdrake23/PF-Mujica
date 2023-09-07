@@ -16,33 +16,30 @@
 
 <body>
     <header class="container-fluid bg-info pb-3">
-        <div class="row d-flex align-items-center">
-            <button class="dark-mode-toggle fa-solid fa-circle-half-stroke"></button>
-            <script>
-                document.querySelector('.dark-mode-toggle').addEventListener('click', function () {
-                    const body = document.body;
-                    if (body.classList.contains('dark-mode')) {
-                        body.classList.remove('dark-mode');
-                    } else {
-                        body.classList.add('dark-mode');
-                    }
-                });
-            </script>
-            <div class="d-flex justify-content-center col-lg-3">
-                <p class="fs-1 fw-semibold"><i class="fa-solid fa-diamond" style="color: #000000;"></i> BOT</p>
-            </div>
-            <nav class="col-xl-6 col-12 text-center menu">
-                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item" href="./index.html">Home</a>
-                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item" href="./pages/commands.html">Commands</a>
-                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item" href="./pages/contact.html">Contact</a>
-                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item" href="./pages/joinus.html">Join</a>
-                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item" href="./pages/invite.html">Invite</a>
-            </nav>
-            <div class="d-none col-lg-3 justify-content-center align-items-center d-xl-flex">
-                <p class="fw-semibold fs-1 m-0">NERU</p> <img class="w-25 ml-2" src="./images/Neru.jpg"
-                    alt="Imagen de presentacion de Neru">
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="col-xl-6 col-12 text-center menu p-4 w-100">
+                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item d-block d-lg-inline"
+                    href="./index.html">Home</a>
+                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item d-block d-lg-inline"
+                    href="./pages/commands.html">Commands</a>
+                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item d-block d-lg-inline"
+                    href="./pages/contact.html">Contact</a>
+                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item d-block d-lg-inline"
+                    href="./pages/joinus.html">Join</a>
+                <a class="text-decoration-none mx-3 text-dark fw-bold fs-4 menu-item d-block d-lg-inline"
+                    href="./pages/invite.html">Invite</a>
             </div>
         </div>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <p class="fs-1 fw-semibold"><i class="fa-solid fa-diamond"></i> MENU</p>
+                </button>
+                <button class="dark-mode-toggle fa-solid fa-circle-half-stroke"></button>
+            </div>
+        </nav>
     </header>
     <main class="container my-5 min-vh-100">
         <h1 class="border-bottom border-info animate__animated animate__bounce">Description</h1>
@@ -74,6 +71,16 @@
         </div>
     </footer>
 
+    <script>
+        document.querySelector('.dark-mode-toggle').addEventListener('click', function () {
+            const body = document.body;
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+            } else {
+                body.classList.add('dark-mode');
+            }
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>

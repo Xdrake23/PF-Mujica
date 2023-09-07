@@ -36,6 +36,10 @@ body.dark-mode {
     .table {
         border-color: #666;
 
+        .table-bordered {
+            border-color: #FFF;
+        }
+
         thead th {
             background-color: #444;
             color: #FFF;
